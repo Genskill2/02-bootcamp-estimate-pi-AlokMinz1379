@@ -34,7 +34,9 @@ class TestMC(unittest.TestCase):
 if __name__ == "__main__":
   unittest.main()
   
-  
+
+
+
 def wallis(n):
 
     numerator = 2.0
@@ -49,7 +51,6 @@ def wallis(n):
             numerator += 2.0
 
     pi *= 2.0
-
     return pi
 
 def monte_carlo(n):
