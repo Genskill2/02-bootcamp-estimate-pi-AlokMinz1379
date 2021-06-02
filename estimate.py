@@ -52,6 +52,7 @@ def wallis(n):
     pi *= 2.0
 
     return pi
+       
 
 def monte_carlo(n):
 
@@ -67,3 +68,7 @@ def monte_carlo(n):
         i += 1
     pi = (4 * inside) / n
     return pi
+    
+   
+
+
