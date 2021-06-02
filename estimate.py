@@ -33,8 +33,10 @@ class TestMC(unittest.TestCase):
       
 if __name__ == "__main__":
   unittest.main()
+  
+  
     
-  def waalis(n):
+def waalis(n):
    value = 2
    for i in range(1, n):
     a = 4 * (i ** 2)
@@ -44,7 +46,7 @@ if __name__ == "__main__":
    return value  
        
        
-  def monte_carlo(n):
+def monte_carlo(n):
      
    inside = 0
    i = 1    
@@ -53,7 +55,7 @@ if __name__ == "__main__":
     y = random.random()
     if ((x ** 2) + (y ** 2)) <= 1:
      inside += 1
-   i += 1
+    i += 1
    pi = 4 * (inside / n)
    return pi       
          
