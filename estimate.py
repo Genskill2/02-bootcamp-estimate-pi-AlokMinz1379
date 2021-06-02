@@ -36,15 +36,21 @@ if __name__ == "__main__":
   
 
 
-
 def wallis(n):
-    pi = 2  
-    for i in range(1, n):
-        x = 4 * (i ** 2)
-        y = x - 1
-        z = float(x) / float(y)
-       
-        pi *= z
+
+    numerator = 2.0
+    denominator = 1.0
+    pi = 1.0
+
+    for i in range(1, n + 1):
+        pi *= (numerator / denominator)
+        if (i % 2) == 1:
+            denominator += 2.0
+        else:
+            numerator += 2.0
+
+    pi *= 2.0
+
     return pi
 
 def monte_carlo(n):
