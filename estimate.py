@@ -65,5 +65,5 @@ def monte_carlo(n):
         if ((x * 2) + (y * 2)) <= 1:
             inside += 1
         i += 1
-    pi = (4 * inside) / n
+    pi = 4 * (inside / n)
     return pi
