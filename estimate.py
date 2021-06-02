@@ -63,7 +63,7 @@ def monte_carlo(n):
     while (i <= n):
         x = random.random()
         y = random.random()
-        if ((x ** 2) + (y ** 2)) <= 1:
+        if ((x^2) + (y^2)) <= 1:
             inside += 1
         i += 1
     pi = (4 * inside) / n
