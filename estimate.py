@@ -27,7 +27,7 @@ class TestMC(unittest.TestCase):
     def test_accuracy(self):
         for i in range(500, 600):
             pi = monte_carlo(i)
-            self.assertTrue(abs(pi - math.pi) < 0.42, msg=f"Estimate with even {i} iterations is {pi} which is not accurate enough.\n")
+            self.assertTrue(abs(pi - math.pi) < 0.4, msg=f"Estimate with even {i} iterations is {pi} which is not accurate enough.\n")
   
        
       
@@ -66,7 +66,7 @@ def monte_carlo(n):
         if ((x * 2) + (y * 2)) <= 1:
             inside += 1
         i += 1
-    pi = (4 * inside) / n
+    pi = float((4 * inside) / n)
     return pi
     
    
